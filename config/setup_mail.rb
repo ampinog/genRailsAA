@@ -1,6 +1,6 @@
 require "#{Rails.root.to_s}/lib/development_mail_interceptor"
 
-ActionMailer::Base.default_url_options = {host: "https://sistemas.logisticabyv.cl"}
+ActionMailer::Base.default_url_options = {host: "localhost:3000"}
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.raise_delivery_errors = true
 ActionMailer::Base.smtp_settings = {
