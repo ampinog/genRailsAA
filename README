@@ -1,0 +1,27 @@
+sh para crear sistemnas en rails, ruby 2.4.4 y rails 5.1, lo he probaado en UBUNTU 16/18 y CENTOS 7. Con mariaDB 10.1 debiera funcionar con mysql.
+
+requicitos
+linux(ubuntu/centso)
+rvm
+ruby 2.4.4
+mariaDB 10.1( debiera funcionar con mysql)
+instalara rails 5.1 Active_admin Devise Paper_Trail
+hay que cambiar prueba@prueba.cl  por un correo real y modificar lib/setup_mail.rb para que pueda enviar correos para su verificación, o agregar direcatemente en la BD la fecha de confirmacion en la tabla usuarios.
+
+./crear.sh nuevo_proyecto password_de_bd
+
+posteriormente
+
+se pueden agregar tablas con
+
+asumuendo que antes hizo cd nuevo_proyecto
+../agr_tabla.sh g Tabla campo campo:tipo  "campo:tipo{modificadores}"
+
+para eliminar Tabla
+../agr_tabla.sh d Tabla campo
+
+Ejemplo 
+
+../agr_tabla.sh g Empresa "nombre{limit: 30, default: ''}" razon_social "rut{limit: 15, default: ''}" "activa:boolean{default: true, null: false}"
+
+
