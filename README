@@ -1,6 +1,5 @@
-sh para crear sistemnas en rails, ruby 2.4.4 y rails 5.1, lo he probaado en UBUNTU 16/18 y CENTOS 7. Con mariaDB 10.1 debiera funcionar con mysql.
+sh para crear sistemas en rails 5.1, ruby 2.4.4, lo he probado en UBUNTU 16/18 y CENTOS 7. Con mariaDB 10.1 debiera funcionar con mysql.
 
-requicitos
 linux(ubuntu/centso)
 rvm
 ruby 2.4.4
@@ -14,7 +13,7 @@ posteriormente
 
 se pueden agregar tablas con
 
-asumuendo que antes hizo cd nuevo_proyecto
+asumiendo que antes hizo cd nuevo_proyecto
 ../agr_tabla.sh g Tabla campo campo:tipo  "campo:tipo{modificadores}"
 
 para eliminar Tabla
