@@ -15,3 +15,4 @@ ActiveAdmin.register Region do
   action_item :ocultar_ver_side_bar, only: :index do
     link_to "Ocultar/Ver filtro","#", {id: 'ocultar_ver_side_bar'}
   end
+end
