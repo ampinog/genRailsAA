@@ -1,6 +1,5 @@
 #= require active_admin/base
 #= require activeadmin_addons/all
-#= require documentos.js
 
 # Oculta/Ver Filtros
 $(document).ready ->
