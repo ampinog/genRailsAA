@@ -1,0 +1,58 @@
+$am-theme-primary: #342e48;
+@import 'activeadmin_addons/all';
+// SASS variable overrides must be declared before loading up Active Admin's styles.
+//
+// To view the variables that Active Admin provides, take a look at
+// `app/assets/stylesheets/active_admin/mixins/_variables.scss` in the
+// Active Admin source.
+//
+// For example, to change the sidebar width:
+// $sidebar-width: 242px;
+
+// Active Admin's got SASS!
+@import "active_admin/mixins";
+@import "active_admin/base";
+
+// Overriding any non-variable SASS must be done after the fact.
+// For example, to change the default status-tag color:
+//
+//   .status_tag { background: #6090DB; } 
+ 
+// las clases de columna con numeros deben indicarse aca
+.col-afecto_br_iva, .col-retencion_br_exento, .col-ot_imp_1_br_ot_imp_2, .col-total, 
+.col-pagado_br_pendiente, .col-debe, .col-haber, .col-diferencia{
+  text-align: right !important;
+}
+
+span.th{
+  font-weight: bold;
+}
+
+#index_footer{
+  height:100px;
+}
+
+#ap_footer {       
+   position:fixed; 
+   left:0px;       
+   bottom:0px;     
+   height:30px;    
+   width:100%;     
+   background:#999;
+}                  
+.ap_izda{                 
+    float: left;          
+    padding-left: 30px;   
+    display: inline-block;
+}                         
+.ap_centro{               
+    float: left;          
+    padding-left: 300px;  
+    display: inline-block;
+}                         
+.ap_derecha{
+    float: right;
+    padding-right: 30px;
+    display: inline-block;
+}
+
