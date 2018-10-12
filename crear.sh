@@ -206,6 +206,7 @@ wget https://raw.githubusercontent.com/ampinog/genRailsAA/master/app/admin/usuar
 wget https://raw.githubusercontent.com/ampinog/genRailsAA/master/app/admin/regiones.rb -O app/admin/regiones.rb
 wget https://raw.githubusercontent.com/ampinog/genRailsAA/master/app/admin/provincias.rb -O app/admin/provincias.rb
 wget https://raw.githubusercontent.com/ampinog/genRailsAA/master/app/admin/comunas.rb -O app/admin/comunas.rb
+wget https://raw.githubusercontent.com/ampinog/genRailsAA/master/app/admin/version.rb -O app/admin/version.rb
 
 # DECORATORS
 echo "Decorators"
