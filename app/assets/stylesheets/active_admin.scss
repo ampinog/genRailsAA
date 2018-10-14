@@ -8,9 +8,9 @@ $am-theme-primary: #342e48;
 //
 // For example, to change the sidebar width:
 // $sidebar-width: 242px;
-label-color: #333;           
-import "bootstrap-sprockets";
-import "bootstrap";          
+$label-color: #333;           
+@import "bootstrap-sprockets";
+@import "bootstrap";          
                              
 // Active Admin's got SASS!
 @import "active_admin/mixins";
@@ -51,7 +51,7 @@ import "bootstrap";
     @include responsive { 
         display: none;    
     }                     
-
+}
 // las clases de columna con numeros deben indicarse aca
 .col-afecto_br_iva, .col-retencion_br_exento, .col-ot_imp_1_br_ot_imp_2, .col-total, 
 .col-pagado_br_pendiente, .col-debe, .col-haber, .col-diferencia{
