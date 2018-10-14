@@ -8,7 +8,10 @@ $am-theme-primary: #342e48;
 //
 // For example, to change the sidebar width:
 // $sidebar-width: 242px;
-
+label-color: #333;           
+import "bootstrap-sprockets";
+import "bootstrap";          
+                             
 // Active Admin's got SASS!
 @import "active_admin/mixins";
 @import "active_admin/base";
@@ -17,7 +20,38 @@ $am-theme-primary: #342e48;
 // For example, to change the default status-tag color:
 //
 //   .status_tag { background: #6090DB; } 
- 
+.slicknav_menu {                                                        
+    display: none;                                                      
+                                                                        
+    @include responsive {                                               
+        display: block;                                                 
+    }                                                                   
+                                                                        
+    .slicknav_btn {                                                     
+        background-color: #404040;  // the default color looks too dark 
+    }                                                                   
+                                                                        
+    .slicknav_nav {                                                     
+        h1 {                                                            
+            display: none;                                              
+        }                                                               
+        ul + ul {                                                       
+            border-top: 1px solid rgba(0, 0, 0, 0.2);                   
+        }                                                               
+                                                                        
+        li.current a {                                                  
+            border-radius: 10px;                                        
+            background-color: #7B8389;                                  
+            color: #fff;                                                
+        }                                                               
+    }                                                                   
+}                                                                       
+
+#header {                 
+    @include responsive { 
+        display: none;    
+    }                     
+
 // las clases de columna con numeros deben indicarse aca
 .col-afecto_br_iva, .col-retencion_br_exento, .col-ot_imp_1_br_ot_imp_2, .col-total, 
 .col-pagado_br_pendiente, .col-debe, .col-haber, .col-diferencia{
