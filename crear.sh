@@ -248,6 +248,9 @@ sed -i "s/config.localize_format = :long/config.localize_format = :mio/" config/
 sed -i "s/^end$/  config.display_name_methods = [:display_name, :full_name, :name, :nombre, :title, :to_s]\nend/" config/initializers/active_admin.rb
 sed -i "s/config.batch_actions = true/config.batch_actions = false/" config/initializers/active_admin.rb
 
+#assets
+wget https://raw.githubusercontent.com/ampinog/genRailsAA/master/app/assets/javascripts/active_admin.js.coffee -O app/assets/javascripts/active_admin.js.coffee
+wget https://raw.githubusercontent.com/ampinog/genRailsAA/master/app/assets/stylesheets/active_admin.scss -O app/assets/stylesheets/active_admin.scss
 # Modificanso es.yml
 ln=$(sed -n "/^  time:$/,/^      short:/=" config/locales/es.yml )
 ln1=${ln: -3}
