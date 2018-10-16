@@ -8,11 +8,18 @@ $am-theme-primary: #342e48;
 //
 // For example, to change the sidebar width:
 // $sidebar-width: 242px;
+<<<<<<< HEAD
 $label-color: #333;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "slicknav";
 
+=======
+$label-color: #333;           
+@import "bootstrap-sprockets";
+@import "bootstrap";          
+                             
+>>>>>>> 0b6e0ccbb3b8762f36171e1c8a8ca026bb216f78
 // Active Admin's got SASS!
 @import "active_admin/mixins";
 @import "active_admin/base";
@@ -33,6 +40,7 @@ $label-color: #333;
         background-color: #404040;  // the default color looks too dark
     }
 
+<<<<<<< HEAD
     .slicknav_nav {
         h1 {
             display: none;
@@ -53,6 +61,12 @@ $label-color: #333;
     @include responsive {
         display: none;
     }
+=======
+#header {                 
+    @include responsive { 
+        display: none;    
+    }                     
+>>>>>>> 0b6e0ccbb3b8762f36171e1c8a8ca026bb216f78
 }
 // las clases de columna con numeros deben indicarse aca
 .col-afecto_br_iva, .col-retencion_br_exento, .col-ot_imp_1_br_ot_imp_2, .col-total,
