@@ -175,6 +175,7 @@ rake db:migrate
 
 # Traer local/es.yml
 echo "traer locales"
+# el siguiente wget debe ser cambiado a mi git
 wget https://raw.githubusercontent.com/svenfuchs/rails-i18n/master/rails/locale/es.yml -O config/locales/es.yml
 wget https://raw.githubusercontent.com/activeadmin/activeadmin/master/config/locales/es.yml -O config/locales/activeadmin_es.yml
 wget https://raw.githubusercontent.com/tigrish/kaminari-i18n/master/config/locales/es.yml -Oconfig/locales/kaminari_es.yml

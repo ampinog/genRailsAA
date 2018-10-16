@@ -59,16 +59,16 @@ ActiveAdmin.register Usuario do
   end
 
   member_action :filtro, method: :get, format: :json do
-    @admin_user = AdminUser.find(params['id'])
+    @usuario = Usuarior.find(params['id'])
     salida = {}
     case params['accion']
     when 'consultar'
     when 'ver'
-      @admin_user.update_attribute(:ver_filtro, true)
+      @usuario.update_attribute(:ver_filtro, true)
     when 'ocultar'
-      @admin_user.update_attribute(:ver_filtro, false)
+      @usuario.update_attribute(:ver_filtro, false)
     end
-    salida = {respuesta: (@admin_user.ver_filtro ? 'S' : 'N')}
+    salida = {respuesta: (@usuario.ver_filtro ? 'S' : 'N')}
     respond_to do |format|
       format.json {render json: salida}
     end
